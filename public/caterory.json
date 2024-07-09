@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "category": "Trees",
+      "image": "https://cornwallpark.co.nz/uploads/pages/_hero/760/Totara-on-Tree-Trail-2.jpg"
+    },
+    {
+      "category": "Shrubs",
+      "image": "https://www.continentaltreefarms.com/src/images/plants/variety_plants.jpg"
+    },
+    {
+      "category": "Vegetables",
+      "image": "https://www.southernliving.com/thmb/Or_SuGRK7MdfX0gESY1q1HbVxa0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1251268368-f2468bfdc3134eeab3a3b634f80afa9b.jpg"
+    },
+    {
+      "category": "Fruits",
+      "image": "https://i.ytimg.com/vi/fihN3WqOFF8/mqdefault.jpg"
+    },
+    {
+      "category": "Herbs",
+      "image": "https://img.iproperty.com.my/angel/750x1000-fit/wp-content/uploads/sites/2/2019/09/39459638_m-1.jpg"
+    },
+    {
+      "category": "Indoor Plants",
+      "image": "https://media.architecturaldigest.com/photos/5dcde0245ff5e60008e76f52/master/w_1600%2Cc_limit/Osofsky_Oct19-571.jpg"
+    },
+    {
+      "category": "Flowering Plants",
+      "image": "https://st2.depositphotos.com/1001866/6582/i/450/depositphotos_65823127-stock-photo-many-flower-plants-in-pots.jpg"
+    },
+    {
+      "category": "Specialty Plants",
+      "image": "https://s3-media0.fl.yelpcdn.com/bphoto/x4b-MZJxKZG4xM7Yj9vimg/348s.jpg"
+    }
+  ]
+}

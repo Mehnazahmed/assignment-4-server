@@ -1,5 +1,7 @@
 import { Router } from "express";
-import { ProductRoutes } from "../module/Products/product.route";
+import { ProductRoutes } from "../module/Products/products.route";
+import { PlantCategoryRoutes } from "../module/Category/category.route";
+import { OrderRoutes } from "../module/Order/order.route";
 
 const router = Router();
 
@@ -8,8 +10,16 @@ const moduleRoutes = [
     path: "/products",
     route: ProductRoutes,
   },
+  {
+    path: "/categories",
+    route: PlantCategoryRoutes,
+  },
+  {
+    path: "/orders",
+    route: OrderRoutes,
+  },
 ];
 
-moduleRoutes.forEach((route) => router.use(route.path, route.route)); // This will automatically loop your routes that you will add in the moduleRoutes array
+moduleRoutes.forEach((route) => router.use(route.path, route.route));
 
 export default router;
