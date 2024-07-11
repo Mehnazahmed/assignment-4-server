@@ -4,7 +4,7 @@ export interface TProduct {
   _id: string;
   title: string;
   price: number;
-  category: Types.ObjectId;
+  category: string;
   description: string;
   rating: number;
   image: string;

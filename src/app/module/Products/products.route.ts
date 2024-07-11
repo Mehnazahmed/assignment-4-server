@@ -13,6 +13,7 @@ router.post(
 
 router.get("/", ProductControllers.getAllProducts);
 router.get("/:id", ProductControllers.getSingleProduct);
+router.get("/category/:category", ProductControllers.getProductsByCategory);
 
 router.patch(
   "/:id",
