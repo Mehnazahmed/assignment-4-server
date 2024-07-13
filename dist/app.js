@@ -11,9 +11,13 @@ const globalErrorhandler_1 = __importDefault(require("./app/middlewares/globalEr
 const app = (0, express_1.default)();
 //parsers
 app.use(express_1.default.json());
-app.use((0, cors_1.default)({ origin: ["http://localhost:5173"], credentials: true }));
+app.use((0, cors_1.default)({
+    origin: "https://assignment-4-client.vercel.app",
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+}));
 // application routes
-app.use("/api/v1", routes_1.default); // /api/v1 will prefix all the route. This is the connection with the index.ts file inside the routes folder.
+app.use("/", routes_1.default);
 app.get("/", (req, res) => {
     res.send("Hello from Assignment-4");
 });
