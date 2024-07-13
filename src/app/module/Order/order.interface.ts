@@ -1,7 +1,6 @@
-import { Types } from "mongoose";
-
-export interface TOrderProduct {
-  product: Types.ObjectId;
+export interface TOrderItem {
+  _id?: string;
+  quantity: number;
 }
 
 export interface TOrder {
@@ -9,7 +8,7 @@ export interface TOrder {
   name: string;
   phone: number;
   address: string;
-  product: TOrderProduct;
+  items: TOrderItem[];
 
   totalAmount: number;
 }

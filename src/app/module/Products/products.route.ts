@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.post(
   "/create-product",
-  // validateRequest(ProductValidations.createProductValidationSchema),
+  validateRequest(ProductValidations.createProductValidationSchema),
   ProductControllers.createProduct
 );
 
@@ -15,7 +15,7 @@ router.get("/", ProductControllers.getAllProducts);
 router.get("/:id", ProductControllers.getSingleProduct);
 router.get("/category/:category", ProductControllers.getProductsByCategory);
 
-router.patch(
+router.put(
   "/:id",
   validateRequest(ProductValidations.updateProductValidationSchema),
   ProductControllers.updateProduct

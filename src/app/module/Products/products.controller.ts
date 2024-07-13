@@ -52,8 +52,8 @@ const getProductsByCategory = catchAsync(async (req, res) => {
 });
 
 const updateProduct = catchAsync(async (req, res) => {
-  const { productId } = req.params;
-  const result = await ProductServices.updateProductFromDB(productId, req.body);
+  const { id } = req.params;
+  const result = await ProductServices.updateProductFromDB(id, req.body);
 
   sendResponse(res, {
     statusCode: httpStatus.OK,

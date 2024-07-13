@@ -10,7 +10,7 @@ const order_validation_1 = require("./order.validation");
 const order_controller_1 = require("./order.controller");
 const router = express_1.default.Router();
 router.post("/", 
-// validateRequest(OrderValidations.orderValidationSchema),
+// validateRequest(OrderValidations.createOrderSchema),
 order_controller_1.OrderControllers.createOrder);
-router.get("/", (0, validateRequest_1.default)(order_validation_1.OrderValidations.orderValidationSchema), order_controller_1.OrderControllers.getAllOrders);
+router.get("/", (0, validateRequest_1.default)(order_validation_1.OrderValidations.createOrderSchema), order_controller_1.OrderControllers.getAllOrders);
 exports.OrderRoutes = router;

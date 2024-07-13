@@ -7,14 +7,13 @@ const router = express.Router();
 
 router.post(
   "/",
-
-  // validateRequest(OrderValidations.orderValidationSchema),
+  // validateRequest(OrderValidations.createOrderSchema),
   OrderControllers.createOrder
 );
 router.get(
   "/",
 
-  validateRequest(OrderValidations.orderValidationSchema),
+  validateRequest(OrderValidations.createOrderSchema),
   OrderControllers.getAllOrders
 );
 
