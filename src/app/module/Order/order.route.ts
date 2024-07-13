@@ -6,9 +6,9 @@ import { OrderControllers } from "./order.controller";
 const router = express.Router();
 
 router.post(
-  "/create-order",
+  "/",
 
-  validateRequest(OrderValidations.orderValidationSchema),
+  // validateRequest(OrderValidations.orderValidationSchema),
   OrderControllers.createOrder
 );
 router.get(

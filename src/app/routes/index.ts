@@ -15,7 +15,7 @@ const moduleRoutes = [
     route: PlantCategoryRoutes,
   },
   {
-    path: "/orders",
+    path: "/order",
     route: OrderRoutes,
   },
 ];

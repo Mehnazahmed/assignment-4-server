@@ -2,17 +2,14 @@ import { Types } from "mongoose";
 
 export interface TOrderProduct {
   product: Types.ObjectId;
-  quantity: number;
 }
 
 export interface TOrder {
-  _id: string;
-  customerName: string;
-  phoneNumber: string;
+  _id?: string;
+  name: string;
+  phone: number;
   address: string;
-  products: TOrderProduct[];
+  product: TOrderProduct;
+
   totalAmount: number;
-  status: string;
-  createdAt: Date;
-  updatedAt: Date;
 }

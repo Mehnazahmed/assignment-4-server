@@ -1,17 +1,12 @@
 import mongoose, { Types } from "mongoose";
 const orderSchema = new mongoose.Schema(
   {
-    customerName: { type: String, required: true },
-    phoneNumber: { type: String, required: true },
+    name: { type: String, required: true },
+    phone: { type: Number, required: true },
     address: { type: String, required: true },
-    products: [
-      {
-        product: { type: Types.ObjectId, ref: "Product", required: true },
-        quantity: { type: Number, required: true },
-      },
-    ],
+    product: { type: Types.ObjectId },
+
     totalAmount: { type: Number, required: true },
-    status: { type: String, default: "Pending" },
   },
   { timestamps: true }
 );
